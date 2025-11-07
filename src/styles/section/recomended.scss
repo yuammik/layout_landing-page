@@ -1,16 +1,20 @@
 .recomended {
   &__products {
-    @include pageGrid;
+    @include page-grid;
+
     row-gap: 40px;
   }
 
   &__product {
     grid-column: 1 / -1;
 
-    @include onTablet {
+    @include hover(transform, scale(1.03));
+
+    @include on-tablet {
       grid-column: span 6;
     }
-    @include onDesktop {
+
+    @include on-desktop {
       grid-column: span 4;
     }
   }

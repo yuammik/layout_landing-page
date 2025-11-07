@@ -1,13 +1,20 @@
-@import 'utils/mixings.scss';
+@import 'utils/mixings';
 
-@import 'blocks/menu.scss';
-@import 'blocks/page.scss';
-@import 'blocks/header.scss';
-@import 'blocks/top-bar.scss';
-@import 'blocks/icon.scss';
-@import 'blocks/nav.scss';
+@import 'blocks/menu';
+@import 'blocks/page';
+@import 'blocks/header';
+@import 'blocks/top-bar';
+@import 'blocks/icon';
+@import 'blocks/nav';
 
-@import 'section-title.scss';
-@import 'main.scss';
-@import 'product.scss';
-@import 'recomended.scss';
+@import 'section/section-title';
+@import 'blocks/main';
+@import 'product';
+@import 'section/recomended';
+
+@import 'section/about';
+@import 'section/categories';
+@import 'section/contact';
+
+@import 'buttons';
+@import 'blocks/footer';

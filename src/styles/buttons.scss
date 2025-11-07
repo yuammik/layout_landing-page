@@ -1,0 +1,47 @@
+.wrapper-button {
+  @include page-grid;
+  &__button {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 56px;
+    border: none;
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 27px;
+    color: white;
+    text-align: center;
+
+    background-color: #f98921;
+
+    &--view {
+      grid-column: 1 / -1;
+
+      @include on-desktop {
+        grid-column: span 4;
+      }
+    }
+
+    &--send {
+      grid-column: 1 / -1;
+    }
+  }
+
+  &__button:hover {
+    cursor: pointer;
+    background-color: #1b2129;
+
+    @include hover(transform, scale(0.92));
+  }
+
+  &__button:active {
+    cursor: pointer;
+    background-color: #010810;
+
+    @include hover(transform, scale(1.03));
+  }
+}

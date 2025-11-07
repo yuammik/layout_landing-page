@@ -1,0 +1,64 @@
+.about {
+  &__photos {
+    display: block;
+    justify-content: center;
+
+    height: 200px;
+
+    background-image: url(../images/ads.svg);
+    background-position: center;
+    background-size: cover;
+
+    @include on-tablet {
+      height: 400px;
+    }
+
+    @include on-desktop {
+      height: 460px;
+    }
+  }
+
+  .container {
+    padding-top: 48px;
+    padding-bottom: 64px;
+
+    @include on-tablet {
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
+  }
+
+  &__content {
+    @include page-grid;
+
+    &__title {
+      grid-column: 1 / -1;
+
+      @include on-tablet {
+        grid-column: span 3;
+      }
+
+      @include on-desktop {
+        grid-column: span 6;
+      }
+    }
+
+    &__description {
+      grid-column: 1 / -1;
+
+      margin: 0;
+
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 140%;
+
+      @include on-tablet {
+        grid-column: span 3;
+      }
+
+      @include on-desktop {
+        grid-column: 8 / 12;
+      }
+    }
+  }
+}
